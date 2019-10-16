@@ -1,0 +1,207 @@
+@import "colors";
+
+#title {
+  text-align: center;
+  border: none;
+  resize: none;
+  height: 150px;
+  width: 600px;
+  line-height: 1.2;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 30px;
+
+  &:focus {
+    border: none;
+    outline-width: 0;
+    text-align: center;
+  }
+
+  &::placeholder {
+    font-size: 50px;
+    text-align: center;
+    color: lightgray;
+  }
+
+  &.danger{
+    color: red;
+    &::placeholder {color: indianred;}
+  }
+}
+
+.btn-minus{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  &::before{
+    content: "";
+    position: absolute;
+    background: black;
+    top:24px;
+    left: 19px;
+    width: 11px;
+    height: 1px;
+  }
+}
+
+.btn-plus{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  &::before{
+    content: "";
+    position: absolute;
+    background: black;
+    top:24px;
+    left: 19px;
+    width: 11px;
+    height: 1px;
+  }
+
+  &::after{
+    content:"";
+    position: absolute;
+    background: black;
+    left:24px;
+    top:19px;
+    width: 1px;
+    height: 11px;
+  }
+}
+
+.number-select{
+  width:50px;
+  height:50px;
+  border: none;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.field-name{
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.ingredient{
+  margin-bottom: 10px;
+  border-left: 3px solid $gray;
+  background-color: $white;
+  transition-duration: .3s;
+}
+
+.ingredient:focus-within{
+  border-left-color: $green;
+}
+
+.ingredient-input{
+  background-color: transparent;
+  height:50px;
+  border: none;
+}
+
+.ingredient-name{
+  width: available;
+}
+
+.ingredient-amount{
+  text-align: center;
+  width: 50px;
+  border-left:2px solid lightgray;
+  border-right:2px solid lightgray;
+}
+
+.step-text{
+  background: $white;
+  text-align: left;
+  max-width: 1050px;
+}
+
+.step-number{
+  margin: 0 auto;
+  width: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: $gray;
+  transition-duration: .3s;
+  color: white;
+}
+
+.step:focus-within .step-number{
+  background-color: $green;
+}
+
+.step{
+  margin-bottom: 20px;
+}
+
+.crop-close{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.crop-submit{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#crop-content{
+  width:100%;
+}
+
+.popover{
+  border-color: darkred;
+}
+
+.bs-popover-right .arrow::before{
+  border-right-color: darkred;
+}
+
+.bs-popover-top .arrow::before{
+  border-top-color: darkred;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before{
+  border-color: $green;
+  background-color: $green;
+}
+
+.custom-control-input ~ .custom-control-label::before{
+  border-radius: 0;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow:none !important;
+}
+
+.field-name.danger{
+  color: red;
+}
+
+#addrecipe-image.danger, #addrecipe-preview-image.danger{
+  color: red;
+  border: 1px red solid;
+}
+
+h3.danger{
+  color: red;
+}
+
+.ingredient.danger{
+  border-left-color: red;
+}
+
+.step.danger .step-number{
+  background-color: red;
+}

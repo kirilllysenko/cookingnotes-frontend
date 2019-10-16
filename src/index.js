@@ -1,12 +1,18 @@
+//importing all libraries and css files
+import 'react';
+import 'jquery';
+import 'popper.js'
+import 'bootstrap';
+import 'bootstrap-notify'
+import './css/style.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {BrowserRouter} from 'react-router-dom';
+import {Provider} from 'react-redux'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import App from './js/components/App';
+import storeFactory from "./js/store/store";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+export const store = storeFactory();
+
+ReactDOM.render(<BrowserRouter><Provider store={store}><App/></Provider></BrowserRouter>, document.getElementById('root'));

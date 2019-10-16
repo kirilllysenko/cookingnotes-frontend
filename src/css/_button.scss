@@ -1,0 +1,56 @@
+@import "colors";
+
+.btn{
+  border-radius: 0;
+  font-weight: 600;
+
+  &:focus{
+    outline: none !important;
+    box-shadow: none;
+  }
+}
+
+.btn-lg{
+  padding: 0 30px;
+  height: 50px;
+}
+
+.btn-1{
+  border: 3px solid $green;
+  background-color: transparent;
+  color: $green;
+  transition-duration: 400ms;
+
+  &:hover{
+    color: $white;
+    background-color: $green;
+  }
+}
+
+.btn-2{
+  font-size: 16px;
+  border-left: 3px solid forestgreen;
+  background-color: $green;
+  color: white;
+  transition-duration: 400ms;
+
+  &:hover{
+    color: white;
+    background-color: forestgreen;
+    border-left: 3px solid $green;
+  }
+}
+
+.btn-favourite{
+  color: indianred;
+  border: 3px solid indianred;
+
+  &:hover{
+    color: indianred;
+  }
+
+  &.active{
+    color: white;
+    background-color: indianred;
+  }
+}

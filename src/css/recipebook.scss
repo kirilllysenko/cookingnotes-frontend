@@ -1,0 +1,15 @@
+.recipebook-tab{
+  user-select: none;
+  padding: 10px 0;
+  font-weight: 600;
+  transition-duration: .2s;
+}
+
+.recipebook-tab.active{
+  background-color: $green !important;
+  color: white;
+}
+
+.recipebook-tab:hover{
+  background-color: whitesmoke;
+}
