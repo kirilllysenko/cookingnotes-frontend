@@ -1,0 +1,22 @@
+#home {
+  .carousel-card {
+    position: relative;
+    padding: 60px 50px;
+    background-color: rgba(24, 24, 24, .54);
+    color: white;
+    border-left: 3px solid #40ba37;
+  }
+
+  .carousel-caption {
+    top: 20px;
+  }
+
+  .christmas-offer {
+    color: white;
+    height: 675px;
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url("../../../assets/christmas.jpg");
+    margin-top: 50px;
+  }
+}

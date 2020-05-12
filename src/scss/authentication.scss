@@ -1,0 +1,51 @@
+#authentication-card{
+  background: #fff;
+  -webkit-box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+  box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+  border-radius: 8px;
+  max-width: 450px;
+  margin: 48px auto;
+  padding: 32px;
+  text-align: center;
+}
+
+.authentication-input{
+  height: 45px;
+  margin: 14px 0rem;
+  width: 100%
+}
+
+.social-btn{
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-color: #e8e8e8;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.social-btn img{
+  height:1.7rem;
+  width:1.7rem;
+  float: left;
+  margin-right: auto;
+}
+
+#authentication-separator{
+  border-bottom: 1px solid #eee;
+  padding-top: 0.8rem;
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#authentication-separator span{
+  left: 46%;
+  position: absolute;
+  color: rgba(0,0,0,.45);
+  top: 0;
+  background: white;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}

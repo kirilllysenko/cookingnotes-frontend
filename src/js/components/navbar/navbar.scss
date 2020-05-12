@@ -1,0 +1,65 @@
+@import "../../../scss/colors";
+
+#navbar {
+  background-color: white;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+#navbar-profile{
+  position: relative;
+  display: inline-block;
+}
+
+#navbar-profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#navbar-profile-expanding{
+  z-index: 3000;
+  top: 50px;
+  right: 0;
+  width: 180px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.27);
+  padding: 25px 35px 30px;
+  visibility: hidden;
+  opacity: 0;
+  transform: none;
+  transition: visibility .3s, opacity .3s linear, transform .3s linear;
+}
+
+#navbar-profile:hover #navbar-profile-expanding{
+  transform: translateY(10px);
+  visibility: visible;
+  opacity:1;
+}
+
+#navbar-profile-expanding-top{
+  margin: 0 -20px 0px;
+}
+
+.navbar-page{
+  height: 35px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition-duration: .3s;
+  border-bottom: 3px solid transparent;
+  padding: 7px 18px;
+  margin-right: 30px;
+}
+
+.navbar-page:hover .active.navbar-page{
+  color: white;
+  border-bottom: 3px solid forestgreen;
+  background-color: $green;
+}
+.active > .navbar-page{
+  color: white;
+  border-bottom: 3px solid forestgreen;
+  background-color: $green;
+}
