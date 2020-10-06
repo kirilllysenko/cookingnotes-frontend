@@ -1,4 +1,4 @@
-export const API_BASE_URL = 'http://cooking-notes.eu-west-2.elasticbeanstalk.com/api';
+export const API_BASE_URL = 'https://backend.cookingnotes.cyprog.net/api';
 export const ACCESS_TOKEN = 'accessToken';
 
 export const OAUTH2_REDIRECT_URI = `http://127.0.0.1:3000/oauth2/redirect`;
