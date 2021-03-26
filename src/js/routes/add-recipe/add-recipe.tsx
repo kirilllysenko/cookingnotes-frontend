@@ -5,7 +5,6 @@ import Title from "./add-recipe-title";
 import {addRecipe, editRecipe, Ingredient, RecipeRequest, Step} from "../../api/recipe";
 import {RouteComponentProps} from "react-router-dom";
 import {FormContext, useForm} from "react-hook-form";
-import {DevTool} from "react-hook-form-devtools";
 import AddRecipeIngredientList from "./add-recipe-ingredient-list";
 import AddRecipeOptions from "./add-recipe-options";
 import AddRecipeStepList from "./add-recipe-step-list";
@@ -100,7 +99,6 @@ const AddRecipe = ({history, location}: RouteComponentProps<{}, {}, LocationStat
                     <div className="w-100 d-flex justify-content-center">
                         <button type="submit" className="btn btn-1 mx-auto">Add Recipe</button>
                     </div>
-                    <DevTool control={methods.control}/>
                 </div>
             </form>
         </FormContext>
