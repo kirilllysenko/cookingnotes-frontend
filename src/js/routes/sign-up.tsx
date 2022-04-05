@@ -26,11 +26,11 @@ const SignUp = () => {
 
     return <div id="authentication-card">
         <h4 className="mb-3">Sign up to Cooking Notes</h4>
-        <a className="btn social-btn authentication-input" href={GOOGLE_AUTH_URL}>
-            <img src={googleLogo} alt="Google"/>Sign up with Google</a>
-        <div id="authorisation-separator">
-            <span>OR</span>
-        </div>
+        {/*<a className="btn social-btn authentication-input" href={GOOGLE_AUTH_URL}>*/}
+        {/*    <img src={googleLogo} alt="Google"/>Sign up with Google</a>*/}
+        {/*<div id="authorisation-separator">*/}
+        {/*    <span>OR</span>*/}
+        {/*</div>*/}
         <form onSubmit={onSubmit}>
             <div className="align-items-center mt-2 d-flex flex-column">
                 <input type="text" name="name" autoComplete="off"

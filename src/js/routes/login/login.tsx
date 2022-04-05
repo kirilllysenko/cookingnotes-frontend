@@ -30,9 +30,9 @@ const Login = ({history}: RouteComponentProps) => {
 
     return <div id="authentication-card">
         <h4 className="mb-3">Login to Cooking Notes</h4>
-        <a className="btn social-btn authentication-input" href={GOOGLE_AUTH_URL}>
-            <img src={googleLogo} alt="Google"/> Login with Google</a>
-        <div id="authentication-separator"><span>OR</span></div>
+        {/*<a className="btn social-btn authentication-input" href={GOOGLE_AUTH_URL}>*/}
+        {/*    <img src={googleLogo} alt="Google"/> Login with Google</a>*/}
+        {/*<div id="authentication-separator"><span>OR</span></div>*/}
         <form onSubmit={onSubmit}>
             <input type="email" name="email" className="form-control authentication-input" placeholder="Email"
                    ref={register} required/>
