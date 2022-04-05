@@ -22,6 +22,7 @@ export default class fetcher {
 
         options = Object.assign({}, defaults, options);
 
+        // @ts-ignore
         const response = await fetch(API_BASE_URL + options.url, options);
         if(!response.ok)
             throw new Error(response.statusText);
